@@ -2,9 +2,9 @@
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
+        xmlns:gap = "http://m.ghostruck.com"
         id        = "com.ghostruck.m"
-        version   = "1.0.0">
+        version   = "0.2.0">
 
     <name>Ghostruck</name>
 
@@ -18,7 +18,7 @@
 
     <!--
         Enable individual API permissions here.
-        The "device" permission is required for the 'deviceready' event.
+        The "device" permission is required for the 'deviceready' event. *******************
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
 
@@ -64,7 +64,6 @@
     <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
     <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
     <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
-    <icon src="res/icon/webos/icon-64.png"          gap:platform="webos" />
     <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
     <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
 
