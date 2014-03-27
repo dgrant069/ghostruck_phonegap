@@ -6,29 +6,22 @@ body {
   -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
   -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
   -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-  background-color:#2dcc70;
-  /*  background-attachment:fixed;  */
+  background-color: #2dcc70;
+/*    background-attachment:fixed;*/
   font-family:'HelveticaNeue', 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
-  /*  font-size:12px;  */
-  height:100%;
-  width:100%;
-  margin:0px;
-  padding:0px;
-}
+/*  height:100%;
+*//*  width:100%;
+*/}
 
 /* Portrait layout (default) */
 .app {
-  background:#2dcc70 no-repeat center top;
-  position: absolute;
+  background-color: #2dcc70 ;
   left: auto;
   right: auto;
-/*  top:50%;
-  height: 640px; */
-  width: 100%;
   text-align:center;
-/*    padding: 40px 0px 0px 0px;
-    margin: -115px 0px 0px -112px;
-  */}
+  padding: 0px 20px 0px 20px;
+  /* margin: -115px 0px 0px -112px; -*/
+  }
 
   /* Landscape layout (with min-width) */
   @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
