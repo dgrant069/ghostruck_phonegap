@@ -9,17 +9,19 @@ body {
   background-color: #2dcc70;
 /*    background-attachment:fixed;*/
   font-family:'HelveticaNeue', 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
-/*  height:100%;
-*//*  width:100%;
-*/}
+  height: 1136px;
+  width: 640px;
+}
 
 /* Portrait layout (default) */
 .app {
-  background-color: #2dcc70 ;
+  background-color: #2dcc70;
   left: auto;
   right: auto;
   text-align:center;
+  margin-top: 88px;
   padding: 0px 20px 0px 20px;
+  height: 960;
   /* margin: -115px 0px 0px -112px; -*/
   }
 
