@@ -21,9 +21,10 @@ body {
   background:#2dcc70 no-repeat center top;
   position: absolute;
   left: auto;
-  top:50%;
-  height: 640px;
-  width: 560px;
+  right: auto;
+/*  top:50%;
+  height: 640px; */
+  width: 100%;
   text-align:center;
 /*    padding: 40px 0px 0px 0px;
     margin: -115px 0px 0px -112px;
@@ -33,9 +34,8 @@ body {
   @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
       background-position:center center;
-      padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-      margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-      /* offset horizontal: half of image width and text area width */
+      /*padding:75px 0px 75px 170px;
+      margin:-90px 0px 0px -198px;*/
     }
   }
 
@@ -87,16 +87,16 @@ body {
   .button {
     position: block;
     background-color: #27ad5f;
-    height: 120px;
-    width: 560px;
+    width: 100%;
     border-radius: 8px;
-    text-align: center;
+    margin-bottom: 40px;
     text-decoration: none;
-    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .button a {
     color: #ffffff;
-    vertical-align: middle;
-
+    font-size: 36px;
+    height: 40px;
   }
