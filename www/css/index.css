@@ -10,26 +10,30 @@ body {
 /*    background-attachment:fixed;*/
   font-family:'HelveticaNeue', 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
   height: 1136px;
+  position: relative;
 }
 
 /* Portrait layout (default) */
 .app {
-  background-color: #2dcc70;
-  vertical-align: center;
-  left: auto;
-  right: auto;
-  text-align:center;
   height: 100%;
-  padding: 120px 20px 0px 20px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-color: #2dcc70;
+/*  left: auto;
+  right: auto;
+*/  text-align:center;
+/*  height: 100%;
+*/  padding: 0px 20px 0px 20px;
   /* margin: -115px 0px 0px -112px; -*/
   }
 
   /* Landscape layout (with min-width) */
   @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
-      background-position:center center;
+/*      background-position:center center;
       padding:20px 20px 0px 20px;
-    }
+*/    }
   }
 
   h1 {
@@ -77,23 +81,9 @@ body {
     -webkit-animation:fade 3000ms infinite;
   }
 
-/*  .button {
-    position: block;
-    height: 40px;
-    font-size: 36px;
-    width: 100%;
+  img {
+    margin-bottom: 60px;
   }
-
-  .button a {
-    background-color: #27ad5f;
-    border-radius: 8px;
-    width: 100%;
-    text-decoration: none;
-    margin-bottom: 40px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    color: #ffffff;
-  }*/
 
   a.button {
     display:block;
