@@ -78,19 +78,37 @@ body {
     -webkit-animation:fade 3000ms infinite;
   }
 
-  .button {
+/*  .button {
     position: block;
-    background-color: #27ad5f;
+    height: 40px;
+    font-size: 36px;
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 40px;
-    text-decoration: none;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   .button a {
+    background-color: #27ad5f;
+    border-radius: 8px;
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: #ffffff;
+  }*/
+
+  a.button {
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    margin-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+      -webkit-border-radius:8px;
+      -moz-border-radius:8px;
+    border-radius: 8px;
     font-size: 36px;
-    height: 40px;
-  }
+    font-weight:bold;
+    color: #ffffff;
+    background-color: #27ad5f;
+    bottom: fixed;
+ }
