@@ -8,7 +8,7 @@ body {
   -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
   background-color: #2dcc70;
 /*    background-attachment:fixed;*/
-  font-family:'HelveticaNeue', 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-family: 'HelveticaNeue', 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
   height: 100%; /*1136px;*/
   min-height: 1136px;
   position: relative;
@@ -112,6 +112,7 @@ a.button {
   color: #ffffff;
   background-color: #27ad5f;
   bottom: fixed;
+  font-family: 'HelveticaNeue', 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
 }
 
 footer {
@@ -155,19 +156,12 @@ a.footer {
   height: 80px;
 }
 
-dt {
-  bottom: 0;
-}
-
-dd.inactive {
-  display: none;
-}
-
-dd.active {
+dd {
+  font-size: 22px;
+  text-align: left;
   margin-right: auto;
   margin-left: auto;
-  font-size: 18px;
-  text-align: left;
+  width: 88%;
   display: block;
   animation: highlight 1s ease;
     -webkit-animation: highlight 1s ease;
@@ -181,5 +175,5 @@ dd.active {
     -webkit-animation-play-state: initial;
     -moz-animation: highlight 1s ease;
     -o-animation: highlight 1s ease;
-  color: #333333
+  color: #333333;
 }
