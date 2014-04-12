@@ -1,35 +1,118 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Ghostruck</title>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <link rel="stylesheet" type="text/css" href="/assets/application.css" />
-    <title>Ghostruck</title>
   </head>
   <body>
-    <header></header>
-    <div class="app">
-
-      <div id="home">
+    <script id="home" type="text/x-handlebars-template">
+      <div class="app">
         <img src="GT_Green_big.png">
         <div class="button">
           <a class="button" href="https://m.ghostruck.com/">Use Ghostruck</a>
-          <a class="button" href="/views/about.html">What is Ghostruck?</a>
-          <a class="button" href="/views/faqs.html">FAQs</a>
+          <a class="button" href="#about">What is Ghostruck?</a>
+          <a class="button" href="#faqs">FAQs</a>
+        </div>
+      </div>
+    </script>
+    <script id="faqs" type="text/x-handlebars-template">
+      <h1>FAQS</h1>
+      <div id="faqs">
+        <dt class="question" data-role="collapsible">What is a ghostruck?</dt>
+        <div>
+          <dd>"It's either a driverless truck only seen on a full moon or an empty delivery truck ready to pick up your stuff."</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">Who are the ghostruck drivers?</dt>
+        <div>
+          <dd>Every Ghostruck driver is a professional, licensed and bonded mover who has passed a thorough criminal background check. That means you can rest easy knowing that your Ghostruck driver is the right woman or man for your job!</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">What does ghostruck do?</dt>
+        <div>
+          <dd>Ghostruck will move your stuff from here to there or dispose of it for you.</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">How does it work?</dt>
+        <div>
+          <dd>"Ghostruck is a mobile app that matches you with a trustworthy mover. With Ghostruck you can move almost anything, using nothing but the smart phone in your pocket. Ghostruck will ask you questions to better understand what you need to move and then pair you with a Ghostruck-approved mover. Once the move is done, you will get to rate the mover and they will get to rate you. You will be asked to describe the item(s) and job ('a three cushion couch on the 2nd floor going to a storage unit on the ground floor'), take a picture(s) of the item(s), tell us where you need it to go, and then sit back and relax."</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">How much does it cost?</dt>
+        <div>
+          <dd>The cost is based on what you are moving, how far, and if there is a lion pit, stairs, or some other challenge the movers will need to negotiate. There is no back and forth haggling or headaches. We fill our trucks and move your stuff so you can fill your glass and relax!</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">Why should I use ghostruck?</dt>
+        <div>
+          <dd>"It is the easiest, most convenient and cost effective way to move your stuff. Posting your job to Ghostruck will take approximately 5 minutes. Think about how long it would take you to research, interview, select, and negotiate with a mover? Don't even think about asking to borrow your friend's pickup truck again. Trust us. The friendship can't handle it."</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">Is my information secure?</dt>
+        <div>
+          <dd>"The only information that Ghostruck keeps is your email and name. How is that possible? Ghostruck uses <a href='https://stripe.com/'>Stripe</a> to process your transaction. <a href='https://stripe.com/'>Stripe</a> is a world renowned payment processing provider which is audited by a pci-certified auditor, and is certified to pci service provider level 1. This is the most stringent level of certification available. Want more info about this? Visit <a href='https://stripe.com/'>Stripe</a> for a detailed explanation of their security features."</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">What happens if the ghostruck driver accidently breaks my stuff?</dt>
+        <div>
+          <dd>"Sometimes those things happen. That's why every Ghostruck driver is fully insured for accident or loss. The driver's companies are listed with the State of Washington and are reputable, consistent businesses. Ghostruck will also REFUND EVERY PENNY of your job if you are not completely satisfied."</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">Should I tip my ghostruck driver?</dt>
+        <div>
+          <dd>"Tipping your hat to an elderly lady is good. But don't feel any pressure to tip your Ghostruck driver."</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">Can ghostruck get rid of my junk?</dt>
+        <div>
+          <dd>"If you're talking about junk in your trunk, you will need to hit the gym and cut out carbs. If you are referring to unwanted items Ghostruck can absolutely remove and dispose of your junk for you. Just mention JUNK REMOVAL in the item description and watch as a Ghostruck driver arrives to pick it up and make it disappear. We wish losing weight was that easy."</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">Do I need to create an account to use ghostruck?</dt>
+        <div>
+          <dd>"Nope. You can use every incredible Ghostruck tool without ever creating an account. If you prefer to save your Ghostruck jobs you do have the ability to create a personal account but it is not a requirement. When you create a job, the only information you will be asked to enter is your name, email, and payment info. Your payment detail will be stored on Stripe's servers."</dd>
+        </div>
+
+        <dt class="question" data-role="collapsible">How will I communicate with my ghostruck driver?</dt>
+        <div>
+          <dd>After you post your job, you will be able to communicate with your Ghostruck driver via email or cell phone, whatever way makes you feel the most comfortable.</dd>
         </div>
       </div>
 
-    </div>
+      <footer>
+        <a class="footer" href="../index.html">Home</a>
+        <a class="footer" href="https://m.ghostruck.com/">Use Ghostruck</a>
+      </footer>
+    </script>
+    <script id="about" type="text/x-handlebars-template">
+      <div id="about_gt">
+        <video controls>
+          <source src="assets/images/GT.mov" type="video/mov">
+        </video>
+        <!-- <div id="about_button">
+          <a class="button" href="https://m.ghostruck.com/">Use Ghostruck</a>
+        </div> -->
+      </div>
 
+      <footer>
+        <a class="footer" href="../index.html">Home</a>
+        <a class="footer" href="https://m.ghostruck.com/">Use Ghostruck</a>
+      </footer>
+    </script>
+
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/iscroll-infinite.js"></script>
+    <script type="text/javascript" src="js/faqs.js"></script>
+    <script type="text/javascript" src="lib/handlebars.js"></script>
+    <script type="text/javascript" src="lib/pageslider.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+<!--    <script type="text/javascript">app.initialize();</script> -->
   </body>
-
-  <script type="text/javascript" src="phonegap.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-  <script src="js/iscroll-lite.js"></script>
-  <script type="text/javascript" src="js/application.js"></script>
-  <script type="text/javascript">app.initialize();</script>
 </html>
